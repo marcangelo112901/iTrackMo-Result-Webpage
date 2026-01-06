@@ -8,10 +8,10 @@ keypoints_2d = pd.read_csv("2d_keypoints_test.csv", index_col=False).to_numpy()
 keypoints_3d_predictions = pd.read_csv("3d_keypoints_predictions.csv", index_col=False).to_numpy()
 keypoints_3d_ground_truth = pd.read_csv("3d_keypoints_ground_truth.csv", index_col=False).to_numpy()
 epoch_data = pd.read_csv("TrainTestLossOverEpoch.csv", index_col=False).to_numpy()
-k2d_mean = np.genfromtxt("k2D_Mean.csv", delimiter=",")
-k2d_std = np.genfromtxt("k2D_STD.csv", delimiter=",")
-k3d_mean = np.genfromtxt("k3D_Mean.csv", delimiter=",").reshape(3)
-k3d_std = np.genfromtxt("k3D_STD.csv", delimiter=",").reshape(3)
+k2d_mean = np.genfromtxt("K2D_Mean.csv", delimiter=",")
+k2d_std = np.genfromtxt("K2D_STD.csv", delimiter=",")
+k3d_mean = np.genfromtxt("K3D_Mean.csv", delimiter=",").reshape(3)
+k3d_std = np.genfromtxt("K3D_STD.csv", delimiter=",").reshape(3)
 epoch_data[:, 0] = epoch_data[:, 0] + 1
 
     
